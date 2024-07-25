@@ -1,13 +1,10 @@
-<mat-grid-list cols="4" rowHeight="25%">
-  <mat-grid-tile colspan="4"><kdh-logo></kdh-logo></mat-grid-tile>
-  <mat-grid-tile colspan="4"><kdh-description></kdh-description></mat-grid-tile>
-  <mat-grid-tile colspan="2"
-    ><kdh-current-holdings-table></kdh-current-holdings-table
+<mat-grid-list cols="1" rowHeight="25%">
+  <mat-grid-tile colspan="1"><kdh-logo></kdh-logo></mat-grid-tile>
+  <mat-grid-tile colspan="1"><kdh-description></kdh-description></mat-grid-tile>
+  <mat-grid-tile colspan="1"
+    ><kdh-current-holdings></kdh-current-holdings
   ></mat-grid-tile>
-  <mat-grid-tile colspan="2"
-    ><kdh-current-holdings-chart></kdh-current-holdings-chart
-  ></mat-grid-tile>
-  <mat-grid-tile colspan="4"><kdh-copyright></kdh-copyright></mat-grid-tile>
+  <mat-grid-tile colspan="1"><kdh-copyright></kdh-copyright></mat-grid-tile>
 </mat-grid-list>
 
 <router-outlet />
