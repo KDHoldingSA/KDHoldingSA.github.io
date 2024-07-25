@@ -6,12 +6,14 @@ export class MarketOperationModel {
     readonly sharesCount: number; // np. 580 (szt.)
     readonly price: number; // np. 63,70 (PLN)
     readonly operationDate: Date; // when the operation took place
+    readonly brokerCommission: number; // np. 450 (PLN)
 
-    constructor(operationType: MarketOperationTypeEnum, stockSymbol: string, sharesCount: number, price: number, operationDate: Date) {
+    constructor(operationType: MarketOperationTypeEnum, stockSymbol: string, sharesCount: number, price: number, operationDate: Date, brokerCommission: number) {
         this.operationType = operationType;
         this.stockSymbol = stockSymbol;
         this.sharesCount = sharesCount;
         this.price = price;
         this.operationDate = operationDate;
+        this.brokerCommission = brokerCommission;
     }
 }
